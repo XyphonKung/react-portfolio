@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 import { Link } from "react-scroll";
 import resume from "../assets/resume.jpg"
 
@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-        <img src={Logo} alt="Logo Image" style={{ width: "50px" }} />
+        <img src={Logo} alt="Logo Image" style={{ width: "90px" }} />
       </div>
       {/* menu */}
       <div className="hidden md:flex">
@@ -41,7 +41,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="work" smooth={true} duration={500}>
-              Work
+              Project
             </Link>
           </li>
           <li>
@@ -81,7 +81,7 @@ const Navbar = () => {
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
+            Project
           </Link>
         </li>
         <li className="py-6 text-4xl">

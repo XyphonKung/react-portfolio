@@ -8,8 +8,9 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import resume from "../assets/resume.jpg"
+import { BsFillPersonLinesFill,BsLine } from "react-icons/bs";
+import { AiOutlinePhone } from "react-icons/ai";
+import resume from "../assets/resume.jpg";
 
 const Contact = () => {
   return (
@@ -23,10 +24,18 @@ const Contact = () => {
             Contact
           </p>
         </div>
-        <div className="w-full h-[30px] flex justify-between items-center duration-300 bg-[#6fc2b0] p-10 hover:scale-110 rounded-lg mb-2">
+        <div className="w-full h-[30px] flex justify-between items-center duration-300 bg-[#1ad129] p-10 hover:scale-110 rounded-lg mb-2">
           <a
-            className="flex justify-between items-center text-gray-300 w-full"           
+            className="flex justify-between items-center text-gray-300 w-full"
+            href="https://line.me/ti/p/~bankyit0008"
+            target="_blank"
           >
+            <BsLine size={50} />
+            <p className="text-black font-bold">Line</p>
+          </a>
+        </div>
+        <div className="w-full h-[30px] flex justify-between items-center duration-300 bg-[#6fc2b0] p-10 hover:scale-110 rounded-lg mb-2">
+          <a className="flex justify-between items-center text-gray-300 w-full">
             <HiOutlineMail size={50} />
             <p className="text-black font-bold">kittipornbanky@gmail.com</p>
           </a>
@@ -54,7 +63,8 @@ const Contact = () => {
         <div className="w-full h-[30px] flex justify-between items-center duration-300 bg-[#565f69] p-10 hover:scale-110 rounded-lg mb-2">
           <a
             className="flex justify-between items-center text-gray-300 w-full"
-            href={resume} download="resume.jpg" 
+            href={resume}
+            download="resume.jpg"
           >
             <BsFillPersonLinesFill size={50} />
             <p className="text-gray-300 font-bold">Resume</p>
