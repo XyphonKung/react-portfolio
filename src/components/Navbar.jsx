@@ -3,14 +3,12 @@ import {
   FaBars,
   FaTimes,
   FaGithub,
-  FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill, BsLine } from "react-icons/bs";
 import Logo from "../assets/logo1.png";
 import { Link } from "react-scroll";
-import resume from "../assets/resume.jpg"
+import resume from "../assets/resume.jpg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -94,6 +92,16 @@ const Navbar = () => {
       {/* Social icons*/}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1ad129]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://www.facebook.com/kittiporn.piputponskul"
+              target="_blank"
+              
+            >
+              Line <BsLine size={30} />
+            </a>
+          </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -112,18 +120,11 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li> */}
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href={resume} download="resume.jpg"            
+              href={resume}
+              download="resume.jpg"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

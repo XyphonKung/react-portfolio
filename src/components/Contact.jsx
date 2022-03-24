@@ -1,15 +1,11 @@
 import React from "react";
 
 import {
-  FaBars,
-  FaTimes,
   FaGithub,
-  FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill,BsLine } from "react-icons/bs";
-import { AiOutlinePhone } from "react-icons/ai";
 import resume from "../assets/resume.jpg";
 
 const Contact = () => {
